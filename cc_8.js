@@ -10,3 +10,15 @@ console.log(calculateSalary(7000, 1000, 0.15)); // Expected output: "Net Salary:
 
 // We developed a function to determine the net salary by summing the base salary and bonus, then deducting the tax amount.
 
+// Task 2: Product Price After Discount
+
+function calculateDiscount(price, discountRate) {
+    let finalPrice = price - (price * discountRate);
+    return `Final Price: $${finalPrice.toFixed(2)}`;
+};
+
+console.log(calculateDiscount(100, 0.2)); // Expected output: "Final Price: $80.00"
+console.log(calculateDiscount(250, 0.15)); // Expected output: "Final Price: $212.50"
+
+// This function determines the final price of a product by subtracting the discount from the original price.
+
