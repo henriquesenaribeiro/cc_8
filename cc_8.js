@@ -22,3 +22,15 @@ console.log(calculateDiscount(250, 0.15)); // Expected output: "Final Price: $21
 
 // This function determines the final price of a product by subtracting the discount from the original price.
 
+// Task 3: Service Fee Calculation
+
+function calculateServiceFee(amount, serviceType) {
+    let feeRate = serviceType === "Premium" ? 0.15 : serviceType === "Standard" ? 0.10 : 0.05;
+    let serviceFee = amount * feeRate;
+    return `Service Fee: $${serviceFee.toFixed(2)}`;
+}
+console.log(calculateServiceFee(200, "Premium")); // Expected output: "Service Fee: $30.00"
+console.log(calculateServiceFee(500, "Standard")); // Expected output: "Service Fee: $50.00"
+
+// Created a function for a service fee based on the service type provided
+ 
